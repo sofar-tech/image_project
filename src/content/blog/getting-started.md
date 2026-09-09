@@ -2,7 +2,6 @@
 title: '第二篇：如何开始写作'
 description: '一些简单的写作习惯建议，帮你把博客坚持下去。'
 pubDate: 'Sep 09 2026'
-heroImage: '/image_project/blog-placeholder-2.svg'
 ---
 
 写博客不必追求完美。可以从很短的一段话开始。

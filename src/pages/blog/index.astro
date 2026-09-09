@@ -15,20 +15,32 @@ const posts = (await getCollection('blog')).sort(
 <html lang="zh-CN">
 	<head>
 		<BaseHead title={`博客 | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
-		<style>
-			main {
-				width: 960px;
-			}
-		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<section>
-				<h1>博客</h1>
+			<section class="blog-index">
+				<header class="page-head">
+					<h1>博客</h1>
+					<p class="page-desc">按时间排列的文章目录，共 {posts.length} 篇。</p>
+				</header>
 				<BlogPosts posts={posts} />
 			</section>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.page-head {
+		margin-bottom: 1.5rem;
+	}
+	.page-head h1 {
+		margin-bottom: 0.35rem;
+	}
+	.page-desc {
+		margin: 0;
+		color: rgb(var(--gray));
+		font-size: 1rem;
+	}
+</style>

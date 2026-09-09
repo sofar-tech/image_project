@@ -17,7 +17,30 @@ npm run dev
 
 浏览器打开终端里提示的本地地址即可。
 
-## 发布一篇新文章
+## 给文章加自己的图片
+
+1. 把图片放到 `public/images/`，例如 `public/images/cover.jpg`
+2. 在文章开头的元信息里加一行（注意带上仓库名路径）：
+
+```md
+---
+title: '文章标题'
+description: '摘要'
+pubDate: 'Sep 10 2026'
+heroImage: '/image_project/images/cover.jpg'
+---
+```
+
+3. 也可以在正文里插入：
+
+```md
+![说明文字](/image_project/images/cover.jpg)
+```
+
+4. `git push` 后图片就会出现在网站上。
+
+也可以在 GitHub 网页上：打开 `public/images` → **Add file → Upload files**。
+
 
 1. 在 `src/content/blog/` 新建 Markdown 文件，例如 `my-new-post.md`
 2. 文件开头写上元信息：
