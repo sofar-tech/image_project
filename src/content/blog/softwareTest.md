@@ -2,6 +2,7 @@
 title: '第三篇：肯定宣言：成为著名的文学创作者'
 description: '2026.9.9 晴。用 AI 做接口测试、搭自己的网页，以及最近在读的《参谋助手论》。'
 pubDate: 'Sep 09 2026'
+heroImage: '/image_project/images/sure.jpeg'
 ---
 
 2026.9.9 周三 晴
