@@ -1,7 +1,7 @@
 ---
-title: '欢迎来到我的博客'
-description: '第一篇文章：介绍这个用 Astro 和 GitHub Pages 搭建的个人站点。'
-pubDate: 'Sep 09 2026'
+title: '第一篇：欢迎来到我的博客'
+description: '介绍这个用 Astro 和 GitHub Pages 搭建的个人站点。'
+pubDate: 'Sep 07 2026'
 ---
 
 这是站点的第一篇文章。

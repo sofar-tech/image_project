@@ -7,7 +7,7 @@ import BlogPosts from '../../components/BlogPosts.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 
 const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
 );
 ---
 
@@ -22,7 +22,7 @@ const posts = (await getCollection('blog')).sort(
 			<section class="blog-index">
 				<header class="page-head">
 					<h1>博客</h1>
-					<p class="page-desc">按时间排列的文章目录，共 {posts.length} 篇。</p>
+					<p class="page-desc">按发表顺序排列的文章目录，共 {posts.length} 篇。</p>
 				</header>
 				<BlogPosts posts={posts} />
 			</section>
