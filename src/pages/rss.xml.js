@@ -10,7 +10,7 @@ export async function GET(context) {
 		site: context.site,
 		items: posts.map((post) => ({
 			...post.data,
-			link: `/image_project/blog/${post.id}/`,
+			link: `/image_project/blog/${post.id}/`, // project Pages base path
 		})),
 	});
 }
