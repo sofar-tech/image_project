@@ -1,0 +1,48 @@
+---
+description: 个人博客发文模板与整理规则（日记体）
+alwaysApply: true
+---
+
+# 博客发文模板
+
+用户发博客时，通常**只提供内容要点**。助手须按下列模板整理成 `src/content/blog/` 下的 Markdown，不要改用户原意，只做格式化与必要的 front matter。
+
+## 正文结构（固定顺序）
+
+```md
+YYYY.M.D 周X 天气
+
+肯定宣言：……
+
+好事：
+
+1、……
+2、……
+3、……
+
+最近在读一本书：
+
+1、书名或书评要点……
+```
+
+参考范例：`src/content/blog/softwareTest.md`
+
+## Front matter
+
+```md
+---
+title: '第N篇：……'
+description: '一句话摘要（可含日期、天气、要点）'
+pubDate: 'Mon DD YYYY'
+heroImage: '/image_project/images/文件名.jpg'   # 可选；有图才写
+---
+```
+
+## 整理时注意
+
+- 篇序：根据现有文章自动顺延「第N篇」
+- `pubDate`：英文月份缩写，如 `Sep 10 2026`
+- 列表用中文顿号序号 `1、2、3、`
+- 图片放 `public/images/`，`heroImage` 路径必须带 `/image_project/images/`
+- 整理完成后询问是否提交并推送到 GitHub（或用户明确要求时再 push）
+- 不要擅自删改用户写的肯定宣言、好事、读书内容
