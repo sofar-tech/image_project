@@ -44,5 +44,5 @@ heroImage: '/image_project/images/文件名.jpg'   # 可选；有图才写
 - `pubDate`：英文月份缩写，如 `Sep 10 2026`
 - 列表用中文顿号序号 `1、2、3、`
 - 图片放 `public/images/`，`heroImage` 路径必须带 `/image_project/images/`
-- 整理完成后询问是否提交并推送到 GitHub（或用户明确要求时再 push）
+- 整理完成后直接 git commit 并 push，不再询问确认
 - 不要擅自删改用户写的肯定宣言、好事、读书内容
